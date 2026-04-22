@@ -20,6 +20,6 @@ These JS files should become your source-of-truth for your config. Make sure to 
 
 Make sure your configs are all imported and wired up in `generators/{filament|machine|process}.mjs`
 
-Run `npm run generate`.
+Make sure the path in `generator.mjs` points to your OrcaSlicer config directory
 
-Copy the contents of the `output` directory into the OrcaSlicer config directory. If you installed OrcaSlicer via Flatpak on Linux, this will be `~/.var/app/io.github.softfever.OrcaSlicer/config/OrcaSlicer/user/default`. For everyone else, you'll have to figure out the equivalent yourself.
+Run `npm run generate`.

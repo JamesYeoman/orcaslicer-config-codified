@@ -20,6 +20,12 @@ export const writeToFolder = async (folder, profilesObj) => {
 };
 
 export const ensureClean = (outputFolder, subDir) => {
+  if (!subDir) {
+    fs.rmSync(outputFolder, { force: true, recursive: true });
+    fs.mkdirSync(outputFolder);
+    return outputFolder;
+  }
+
   const folder = `${outputFolder}/${subDir}`;
 
   if (!fs.existsSync(outputFolder)) fs.mkdirSync(outputFolder);
