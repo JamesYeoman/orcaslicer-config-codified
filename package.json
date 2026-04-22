@@ -1,0 +1,8 @@
+{
+  "name": "orcaslicer-cfg-generator",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate": "node ./generator.mjs"
+  }
+}

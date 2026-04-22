@@ -1,0 +1,6 @@
+{
+  "support_bottom_z_distance": "0.6",
+  "support_top_z_distance": "0.6",
+  "tree_support_tip_diameter": "1.2",
+  "wall_loops": "2"
+}

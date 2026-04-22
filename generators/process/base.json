@@ -1,0 +1,54 @@
+{
+  "name": "",
+  "print_settings_id": "",
+  "inherits": "",
+
+  "compatible_printers": [],
+
+  "bridge_acceleration": "6600",
+  "default_acceleration": "6600",
+  "initial_layer_acceleration": "2000",
+  "inner_wall_acceleration": "6600",
+  "internal_solid_infill_acceleration": "6600",
+  "outer_wall_acceleration": "5000",
+  "sparse_infill_acceleration": "6600",
+  "top_surface_acceleration": "5000",
+  "travel_acceleration": "6600",
+
+  "overhang_1_4_speed": "100%",
+  "overhang_2_4_speed": "80%",
+  "overhang_3_4_speed": "60%",
+  "overhang_4_4_speed": "40%",
+
+  "gcode_label_objects": "1",
+  "hole_to_polyhole": "1",
+  "infill_combination": "1",
+  "infill_combination_max_layer_height": "80%",
+
+  "initial_layer_travel_speed": "100%",
+
+  "internal_solid_infill_pattern": "monotonic",
+  "sparse_infill_pattern": "adaptivecubic",
+
+  "support_on_build_plate_only": "1",
+
+  "extra_perimeters_on_overhangs": "1",
+
+  "skirt_loops": "1",
+
+  "accel_to_decel_enable": "0",
+  "align_infill_direction_to_model": "1",
+  "bottom_shell_layers": "4",
+  "bottom_shell_thickness": "1",
+  "top_shell_layers": "4",
+
+  "travel_speed": "200",
+
+  "brim_type": "brim_ears",
+  "enable_support": "1",
+
+  "wall_generator": "arachne",
+
+  "reduce_infill_retraction": "0",
+  "slow_down_layers": "1"
+}
