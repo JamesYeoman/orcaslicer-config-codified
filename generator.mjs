@@ -5,7 +5,7 @@ import { ensureClean } from "./generators/utils.mjs";
 
 const outputFolder = ensureClean(
   // Make sure this points to the correct location for you!
-  `~/.var/app/io.github.softfever.OrcaSlicer/config/OrcaSlicer/user/default`,
+  `/home/http501/.var/app/com.orcaslicer.OrcaSlicer/config/OrcaSlicer/user/default`,
 );
 
 machine.write(outputFolder);
