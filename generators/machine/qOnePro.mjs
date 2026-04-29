@@ -1,13 +1,20 @@
-import * as gcodes from "./gcodes.mjs";
+import gcodes from "./gcodes.json" with { type: "json" };
 
-import { ensureClean, writeToFolder } from "../utils.mjs";
+const toStr = (parts) => parts.join("\n") + "\n";
+
+const parseGcode = () => {
+  const entries = Object.entries(gcodes);
+  const mapped = entries.map(([k, v]) => [k, toStr(v)]);
+
+  return Object.fromEntries(mapped);
+};
 
 const base = {
   thumbnails: ["300x300/PNG", "96x96/PNG"],
 
   print_host: "http://mkspi.lan",
 
-  ...gcodes,
+  ...parseGcode(),
 
   emit_machine_limits_to_gcode: "0",
   enable_filament_ramming: "0",

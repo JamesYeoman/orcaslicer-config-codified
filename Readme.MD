@@ -18,7 +18,7 @@ As for the avoiding of hardcoded IDs, the `compatible_printers` property needs a
 
 These JS files should become your source-of-truth for your config. Make sure to keep them in sync with any changes you make in the OrcaSlicer UI. `generators/{filament|machine|process}/*.mjs` will be converted to JSON
 
-Make sure your configs are all imported and wired up in `generators/{filament|machine|process}.mjs`
+All top-level MJS files in `generators/{filament|machine|process}` will be auto-detected and turned into JSON files in the output location specified in `generator.mjs`.
 
 Make sure the path in `generator.mjs` points to your OrcaSlicer config directory
 

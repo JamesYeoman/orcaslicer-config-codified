@@ -1,13 +1,16 @@
-import { ensureClean, writeToFolder } from "./utils.mjs";
+import { readdirSync, mkdirSync } from "node:fs";
 
-import * as pc from "./process/pc.mjs";
-import * as petg from "./process/petg.mjs";
-import * as pla from "./process/pla.mjs";
-import * as plaRapido from "./process/plaRapido.mjs";
-import * as tpu from "./process/tpu.mjs";
+import { writeToFolder } from "./utils.mjs";
 
-export const write = (outputFolder) => {
-  const processFolder = ensureClean(outputFolder, "process");
+export const write = async (outputFolder) => {
+  mkdirSync(`${outputFolder}/process`);
 
-  writeToFolder(processFolder, { pc, petg, pla, plaRapido, tpu });
+  const files = readdirSync(`${import.meta.dirname}/process`);
+
+  for (const file of files) {
+    if (!file.endsWith(".mjs")) continue;
+
+    const processes = await import(`${import.meta.dirname}/process/${file}`);
+    writeToFolder(`${outputFolder}/process`, processes);
+  }
 };

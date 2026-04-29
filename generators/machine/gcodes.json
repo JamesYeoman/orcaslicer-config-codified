@@ -1,0 +1,19 @@
+{
+  "change_filament_gcode": ["PAUSE"],
+  "layer_change_gcode": [
+    "G92 E0",
+    "",
+    "SET_PRINT_STATS_INFO CURRENT_LAYER={layer_num + 1}"
+  ],
+  "machine_end_gcode": [
+    "PRINT_END",
+    "",
+    "; total layers count = [total_layer_count]"
+  ],
+  "machine_start_gcode": [
+    "PRINT_START BED=[first_layer_bed_temperature] HOTEND=[first_layer_temperature] CHAMBER=[chamber_temperature]",
+    "LINE_PURGE",
+    "",
+    "SET_PRINT_STATS_INFO TOTAL_LAYER=[total_layer_count]"
+  ]
+}
