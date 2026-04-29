@@ -12,8 +12,6 @@ export const pointFour = {
 
   additional_cooling_fan_speed: ["30"],
 
-  chamber_temperature: ["25"],
-
   complete_print_exhaust_fan_speed: ["0"],
 
   during_print_exhaust_fan_speed: ["100"],
