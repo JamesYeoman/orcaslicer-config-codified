@@ -29,4 +29,6 @@ export const pointEight = {
   name: "Sunlu Rapid PLA @ Q1 Pro 0.8mm",
   inherits: "QIDI PLA Rapido @Qidi Q1 Pro 0.8 nozzle",
   filament_settings_id: ["Sunlu Rapid PLA @ Q1 Pro 0.8mm"],
+
+  pressure_advance: ["0.035"],
 };

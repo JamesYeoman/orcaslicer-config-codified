@@ -3,7 +3,7 @@ import * as gcodes from "./gcodes.mjs";
 import { ensureClean, writeToFolder } from "../utils.mjs";
 
 const base = {
-  thumbnails: "300x300/PNG, 96x96/PNG",
+  thumbnails: ["300x300/PNG", "96x96/PNG"],
 
   print_host: "http://mkspi.lan",
 
@@ -45,7 +45,10 @@ export const printer_pointeight_mm = {
   inherits: "Qidi Q1 Pro 0.8 nozzle",
   printer_settings_id: "Qidi Q1 Pro 0.8 nozzle - Base",
 
+  max_layer_height: ["0.6"],
   min_layer_height: ["0.2"],
+
+  retraction_length: ["0.8"],
 
   z_hop: ["0.4"],
 };

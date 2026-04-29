@@ -58,7 +58,7 @@ export const rapidPointFour = {
   filament_settings_id: ["Rapid PLA @ Q1 Pro 0.4mm"],
   compatible_prints: [rapido.pointFour.print_settings_id],
 
-  filament_max_volumetric_speed: ["18"],
+  filament_max_volumetric_speed: ["20"],
   filament_retract_when_changing_layer: ["0"],
   filament_wipe: ["0"],
 };
@@ -71,7 +71,7 @@ export const rapidPointEight = {
   filament_settings_id: ["Rapid PLA @ Q1 Pro 0.8mm"],
   compatible_prints: [rapido.pointEight.print_settings_id],
 
-  filament_max_volumetric_speed: ["18"],
+  filament_max_volumetric_speed: ["30"],
   filament_retract_when_changing_layer: ["0"],
   filament_wipe: ["0"],
 };
